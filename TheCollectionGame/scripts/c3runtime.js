@@ -3902,10 +3902,10 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.System.Exps.layoutwidth,
 		C3.Plugins.System.Exps.layoutheight,
 		C3.Plugins.Sprite.Cnds.IsOverlapping,
+		C3.Plugins.Sprite.Exps.Count,
 		C3.Plugins.Sprite.Acts.SetInstanceVar,
 		C3.Plugins.Mouse.Cnds.OnClick,
 		C3.Plugins.Sprite.Cnds.CompareInstanceVar,
-		C3.Plugins.Sprite.Exps.Count,
 		C3.Plugins.Touch.Cnds.OnTouchObject,
 		C3.Plugins.System.Acts.RestartLayout,
 		C3.Plugins.System.Acts.GoToLayout,
@@ -4094,12 +4094,12 @@ self.C3_ExpressionFuncs = [
 		},
 		() => 1.8,
 		() => "Bomb",
-		() => "Clock",
-		() => 5,
 		p => {
 			const n0 = p._GetNode(0);
 			return () => n0.ExpObject();
 		},
+		() => "Clock",
+		() => 5,
 		() => 4,
 		() => "HUD",
 		() => "https://andrewh319.github.io/1130/"
